@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "deploy": "set NITRO_PRESET=firebase&& nuxt build && firebase deploy",
+    "deploy-node": "set NITRO_PRESET=node-server&& nuxt build && node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "firebase-functions": "^3.20.1",
+    "nuxt": "npm:nuxt3@latest"
+  },
+  "dependencies": {
+    "firebase": "^9.6.11",
+    "firebase-admin": "^10.0.2"
+  }
+}
